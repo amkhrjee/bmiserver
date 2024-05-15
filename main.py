@@ -9,9 +9,7 @@ from PIL import Image, ImageOps
 
 detector = MTCNN()
 app = FastAPI()
-origins = [
-    "http://localhost:5173",
-]
+origins = ["http://localhost:5173", "https://bmiweb-xi.vercel.app/"]
 
 
 model = None
