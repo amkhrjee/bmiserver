@@ -1,7 +1,6 @@
 import io
 import pickle
 
-import cv2
 import numpy as np
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
