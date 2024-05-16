@@ -9,7 +9,6 @@ from PIL import Image, ImageOps
 
 detector = MTCNN()
 app = FastAPI()
-origins = ["http://localhost:5173", "https://bmiweb-xi.vercel.app/"]
 
 
 model = None
@@ -19,7 +18,7 @@ with open("./model.pickle", "rb") as f:
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
